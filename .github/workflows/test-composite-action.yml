@@ -1,5 +1,6 @@
 name: Test-Composite-Action
-on: [push]
+on: 
+  workflow_dispatch:
 
 jobs:
   hello_world_job:
