@@ -16,8 +16,13 @@ jobs:
       - run: ls -l
         shell: bash
         
+#       - id: foo
+#         uses: ./hello-world-composite-action
+#         with:
+#           who-to-greet: 'Mona the Octocat'
+          
       - id: foo
-        uses: ./hello-world-composite-action
+        uses: tdd-tin-lab/test-composite-action@v3
         with:
           who-to-greet: 'Mona the Octocat'
           
